@@ -57,7 +57,7 @@ syn region beanPad matchgroup=beanKeyword start="pad" end="$" contained
             \ keepend contains=beanAccount,beanComment
 
 syn region beanTxn matchgroup=beanKeyword start="\v\s+(txn|[*!&#?%PSTCURM])" skip="^\s"
-            \ end="^" keepend contained fold
+            \ end="^" keepend contained
             \ contains=beanString,beanPost,beanComment,beanTag,beanLink,beanMeta
 syn region beanPost start="^\v\C\s+(([*!&#?%PSTCURM]\s+)?[A-Z])@=" end="$"
             \ contains=beanFlag,beanAccount,beanAmount,beanComment,beanCost,beanPrice
